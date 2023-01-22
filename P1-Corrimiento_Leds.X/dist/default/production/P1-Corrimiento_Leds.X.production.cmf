@@ -1,0 +1,499 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/PRACTICA_1.o
+CODE - 0 0 0 202 1 1
+resetVect CODE 0 1FFFC 1FFFC 4 1 2
+udata_acs COMRAM 1 500 500 5 1 1
+config CONFIG 4 300000 300000 23 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 560-36FF 1
+SFR 202-4FF 1
+SFR 3700-3FFF 1
+BANK5 560-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 202-1FFFB 1
+IDLOC 200000-20003F 1
+SMALLCONST 4000-1FFFB 1
+CODE 202-1FFFB 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BANK38 2600-26FF 1
+BANK39 2700-27FF 1
+BANK40 2800-28FF 1
+BANK41 2900-29FF 1
+BANK42 2A00-2AFF 1
+BANK43 2B00-2BFF 1
+BANK44 2C00-2CFF 1
+BANK45 2D00-2DFF 1
+BANK46 2E00-2EFF 1
+BANK47 2F00-2FFF 1
+BANK48 3000-30FF 1
+BANK49 3100-31FF 1
+BANK50 3200-32FF 1
+BANK51 3300-33FF 1
+BANK52 3400-34FF 1
+BANK53 3500-35FF 1
+BANK54 3600-36FF 1
+BIGRAM 500-36FF 1
+BIGSFR 202-4FF 1
+BIGSFR 3700-3FFF 1
+COMRAM 505-55F 1
+CONFIG 300023-300023 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 4000-FFFF 1
+MEDIUMCONST 14000-1FFFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/PRACTICA_1.o
+1FFFC resetVect CODE >18:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+0 CODE ABS >20:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+2 CODE ABS >21:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+4 CODE ABS >24:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+6 CODE ABS >25:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+8 CODE ABS >26:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+C CODE ABS >27:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+E CODE ABS >32:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+10 CODE ABS >33:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+12 CODE ABS >34:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+14 CODE ABS >37:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+16 CODE ABS >38:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+1A CODE ABS >39:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+1C CODE ABS >44:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+1E CODE ABS >45:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+20 CODE ABS >48:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+22 CODE ABS >49:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+24 CODE ABS >50:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+28 CODE ABS >51:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+2A CODE ABS >56:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+2C CODE ABS >57:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+2E CODE ABS >58:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+30 CODE ABS >59:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+32 CODE ABS >62:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+34 CODE ABS >63:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+36 CODE ABS >64:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+3A CODE ABS >65:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+3C CODE ABS >70:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+3E CODE ABS >71:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+40 CODE ABS >72:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+42 CODE ABS >73:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+44 CODE ABS >76:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+46 CODE ABS >77:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+4A CODE ABS >78:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+4C CODE ABS >83:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+4E CODE ABS >84:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+50 CODE ABS >87:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+52 CODE ABS >88:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+54 CODE ABS >89:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+58 CODE ABS >90:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+5A CODE ABS >95:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+5C CODE ABS >96:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+5E CODE ABS >97:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+60 CODE ABS >98:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+62 CODE ABS >101:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+64 CODE ABS >102:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+66 CODE ABS >103:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+6A CODE ABS >104:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+6C CODE ABS >110:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+6E CODE ABS >111:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+70 CODE ABS >112:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+72 CODE ABS >113:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+74 CODE ABS >116:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+76 CODE ABS >117:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+78 CODE ABS >118:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+7C CODE ABS >119:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+7E CODE ABS >125:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+80 CODE ABS >126:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+82 CODE ABS >127:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+84 CODE ABS >128:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+86 CODE ABS >131:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+88 CODE ABS >132:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+8A CODE ABS >135:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+8C CODE ABS >136:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+8E CODE ABS >137:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+92 CODE ABS >138:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+94 CODE ABS >139:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+96 CODE ABS >140:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+9A CODE ABS >141:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+9C CODE ABS >142:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+9E CODE ABS >143:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+A0 CODE ABS >148:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+A2 CODE ABS >149:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+A4 CODE ABS >150:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+A6 CODE ABS >151:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+A8 CODE ABS >154:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+AA CODE ABS >155:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+AC CODE ABS >158:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+AE CODE ABS >159:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+B0 CODE ABS >160:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+B4 CODE ABS >161:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+B6 CODE ABS >162:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+B8 CODE ABS >163:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+BA CODE ABS >164:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+BE CODE ABS >165:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+C0 CODE ABS >166:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+C2 CODE ABS >167:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+C4 CODE ABS >172:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+C6 CODE ABS >173:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+C8 CODE ABS >176:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+CA CODE ABS >177:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+CC CODE ABS >178:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+CE CODE ABS >181:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+D0 CODE ABS >182:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+D2 CODE ABS >183:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+D6 CODE ABS >184:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+D8 CODE ABS >185:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+DA CODE ABS >186:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+DC CODE ABS >187:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+E0 CODE ABS >188:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+E2 CODE ABS >193:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+E4 CODE ABS >194:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+E6 CODE ABS >197:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+E8 CODE ABS >198:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+EA CODE ABS >199:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+EC CODE ABS >202:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+EE CODE ABS >203:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+F0 CODE ABS >204:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+F4 CODE ABS >205:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+F6 CODE ABS >206:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+F8 CODE ABS >207:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+FA CODE ABS >208:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+FE CODE ABS >209:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+100 CODE ABS >214:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+102 CODE ABS >215:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+104 CODE ABS >218:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+106 CODE ABS >219:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+108 CODE ABS >220:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+10A CODE ABS >223:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+10C CODE ABS >224:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+10E CODE ABS >225:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+112 CODE ABS >226:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+114 CODE ABS >227:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+116 CODE ABS >228:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+118 CODE ABS >229:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+11C CODE ABS >230:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+11E CODE ABS >235:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+120 CODE ABS >236:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+122 CODE ABS >239:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+124 CODE ABS >240:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+126 CODE ABS >241:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+128 CODE ABS >244:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+12A CODE ABS >245:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+12C CODE ABS >246:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+130 CODE ABS >247:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+132 CODE ABS >248:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+134 CODE ABS >249:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+136 CODE ABS >250:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+13A CODE ABS >251:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+13C CODE ABS >256:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+13E CODE ABS >257:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+140 CODE ABS >260:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+142 CODE ABS >261:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+144 CODE ABS >264:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+146 CODE ABS >265:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+148 CODE ABS >266:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+14C CODE ABS >267:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+14E CODE ABS >268:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+150 CODE ABS >269:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+152 CODE ABS >270:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+154 CODE ABS >271:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+158 CODE ABS >272:C:\joel_unp\P1-Corrimiento_Leds.X/RETARDOS.inc
+15A CODE ABS >22:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+15E CODE ABS >23:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+162 CODE ABS >24:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+164 CODE ABS >25:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+166 CODE ABS >28:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+168 CODE ABS >29:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+16A CODE ABS >30:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+16E CODE ABS >32:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+170 CODE ABS >33:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+172 CODE ABS >34:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+176 CODE ABS >36:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+178 CODE ABS >37:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+17A CODE ABS >38:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+17E CODE ABS >40:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+180 CODE ABS >41:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+182 CODE ABS >42:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+186 CODE ABS >44:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+188 CODE ABS >45:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+18A CODE ABS >46:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+18E CODE ABS >48:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+190 CODE ABS >49:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+192 CODE ABS >50:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+196 CODE ABS >52:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+198 CODE ABS >53:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+19A CODE ABS >54:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+19E CODE ABS >56:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1A0 CODE ABS >57:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1A2 CODE ABS >58:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1A6 CODE ABS >62:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1A8 CODE ABS >63:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1AA CODE ABS >64:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1AC CODE ABS >65:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1AE CODE ABS >66:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1B0 CODE ABS >67:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1B2 CODE ABS >71:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1B4 CODE ABS >72:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1B6 CODE ABS >73:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1B8 CODE ABS >74:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1BA CODE ABS >75:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1BC CODE ABS >78:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1BE CODE ABS >79:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1C0 CODE ABS >80:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1C2 CODE ABS >81:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1C4 CODE ABS >82:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1C6 CODE ABS >83:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1C8 CODE ABS >86:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1CA CODE ABS >87:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1CC CODE ABS >90:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1CE CODE ABS >91:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1D0 CODE ABS >93:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1D2 CODE ABS >94:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1D4 CODE ABS >95:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1D8 CODE ABS >96:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1DA CODE ABS >97:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1DE CODE ABS >98:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1E0 CODE ABS >101:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1E2 CODE ABS >102:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1E4 CODE ABS >105:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1E6 CODE ABS >106:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1E8 CODE ABS >108:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1EA CODE ABS >109:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1EC CODE ABS >111:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1EE CODE ABS >112:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1F0 CODE ABS >113:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1F4 CODE ABS >114:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1F6 CODE ABS >115:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1FA CODE ABS >116:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+1FC CODE ABS >117:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+200 CODE ABS >118:C:\joel_unp\P1-Corrimiento_Leds.X\PRACTICA_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 20000 0 ABS 0 - -
+__Hspace_1 505 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 600023 0 ABS 0 - -
+__Hudata_bank5 202 0 ABS 0 udata_bank5 -
+__Hudata_bank6 202 0 ABS 0 udata_bank6 -
+__Hudata_bank7 202 0 ABS 0 udata_bank7 -
+__Hudata_bank8 202 0 ABS 0 udata_bank8 -
+__Hudata_bank9 202 0 ABS 0 udata_bank9 -
+__Hudata_bank10 202 0 ABS 0 udata_bank10 -
+__Hudata_bank11 202 0 ABS 0 udata_bank11 -
+__Hudata_bank12 202 0 ABS 0 udata_bank12 -
+__Hudata_bank13 202 0 ABS 0 udata_bank13 -
+__Hudata_bank14 202 0 ABS 0 udata_bank14 -
+__Hudata_bank15 202 0 ABS 0 udata_bank15 -
+__Hudata_bank16 202 0 ABS 0 udata_bank16 -
+__Hudata_bank17 202 0 ABS 0 udata_bank17 -
+__Hudata_bank18 202 0 ABS 0 udata_bank18 -
+__Hudata_bank19 202 0 ABS 0 udata_bank19 -
+__Hudata_bank20 202 0 ABS 0 udata_bank20 -
+__Hudata_bank21 202 0 ABS 0 udata_bank21 -
+__Hudata_bank22 202 0 ABS 0 udata_bank22 -
+__Hudata_bank23 202 0 ABS 0 udata_bank23 -
+__Hudata_bank24 202 0 ABS 0 udata_bank24 -
+__Hudata_bank25 202 0 ABS 0 udata_bank25 -
+__Hudata_bank26 202 0 ABS 0 udata_bank26 -
+__Hudata_bank27 202 0 ABS 0 udata_bank27 -
+__Hudata_bank28 202 0 ABS 0 udata_bank28 -
+__Hudata_bank29 202 0 ABS 0 udata_bank29 -
+__Hudata_bank30 202 0 ABS 0 udata_bank30 -
+__Hudata_bank31 202 0 ABS 0 udata_bank31 -
+__Hudata_bank32 202 0 ABS 0 udata_bank32 -
+__Hudata_bank33 202 0 ABS 0 udata_bank33 -
+__Hudata_bank34 202 0 ABS 0 udata_bank34 -
+__Hudata_bank35 202 0 ABS 0 udata_bank35 -
+__Hudata_bank36 202 0 ABS 0 udata_bank36 -
+__Hudata_bank37 202 0 ABS 0 udata_bank37 -
+__Hudata_bank38 202 0 ABS 0 udata_bank38 -
+__Hudata_bank39 202 0 ABS 0 udata_bank39 -
+__Hudata_bank40 202 0 ABS 0 udata_bank40 -
+__Hudata_bank41 202 0 ABS 0 udata_bank41 -
+__Hudata_bank42 202 0 ABS 0 udata_bank42 -
+__Hudata_bank43 202 0 ABS 0 udata_bank43 -
+__Hudata_bank44 202 0 ABS 0 udata_bank44 -
+__Hudata_bank45 202 0 ABS 0 udata_bank45 -
+__Hudata_bank46 202 0 ABS 0 udata_bank46 -
+__Hudata_bank47 202 0 ABS 0 udata_bank47 -
+__Hudata_bank48 202 0 ABS 0 udata_bank48 -
+__Hudata_bank49 202 0 ABS 0 udata_bank49 -
+__Hudata_bank50 202 0 ABS 0 udata_bank50 -
+__Hudata_bank51 202 0 ABS 0 udata_bank51 -
+__Hudata_bank52 202 0 ABS 0 udata_bank52 -
+__Hudata_bank53 202 0 ABS 0 udata_bank53 -
+__Hudata_bank54 202 0 ABS 0 udata_bank54 -
+isa$xinst 0 0 ABS 0 - build/default/production/PRACTICA_1.o
+__Hedata 202 0 ABS 0 edata -
+__Hudata 202 0 ABS 0 udata -
+__Hconfig 300023 0 CONFIG 4 config -
+__Ledata 202 0 ABS 0 edata -
+__Ludata 202 0 ABS 0 udata -
+__HCODE 202 0 ABS 0 CODE -
+__Hcode 202 0 ABS 0 code -
+__Hdata 202 0 ABS 0 data -
+__LCODE 0 0 ABS 0 CODE -
+__Lcode 202 0 ABS 0 code -
+__Ldata 202 0 ABS 0 data -
+__S0 20000 0 ABS 0 - -
+__S1 505 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 202 0 ABS 0 udata_bank10 -
+__Ludata_bank11 202 0 ABS 0 udata_bank11 -
+__Ludata_bank12 202 0 ABS 0 udata_bank12 -
+__Ludata_bank13 202 0 ABS 0 udata_bank13 -
+__Ludata_bank14 202 0 ABS 0 udata_bank14 -
+__Ludata_bank15 202 0 ABS 0 udata_bank15 -
+__Ludata_bank16 202 0 ABS 0 udata_bank16 -
+__Ludata_bank17 202 0 ABS 0 udata_bank17 -
+__Ludata_bank18 202 0 ABS 0 udata_bank18 -
+__Ludata_bank19 202 0 ABS 0 udata_bank19 -
+__Ludata_bank20 202 0 ABS 0 udata_bank20 -
+__Ludata_bank21 202 0 ABS 0 udata_bank21 -
+__Ludata_bank22 202 0 ABS 0 udata_bank22 -
+__Ludata_bank23 202 0 ABS 0 udata_bank23 -
+__Ludata_bank24 202 0 ABS 0 udata_bank24 -
+__Ludata_bank25 202 0 ABS 0 udata_bank25 -
+__Ludata_bank26 202 0 ABS 0 udata_bank26 -
+__Ludata_bank27 202 0 ABS 0 udata_bank27 -
+__Ludata_bank28 202 0 ABS 0 udata_bank28 -
+__Ludata_bank29 202 0 ABS 0 udata_bank29 -
+__Ludata_bank30 202 0 ABS 0 udata_bank30 -
+__Ludata_bank31 202 0 ABS 0 udata_bank31 -
+__Ludata_bank32 202 0 ABS 0 udata_bank32 -
+__Ludata_bank33 202 0 ABS 0 udata_bank33 -
+__Ludata_bank34 202 0 ABS 0 udata_bank34 -
+__Ludata_bank35 202 0 ABS 0 udata_bank35 -
+__Ludata_bank36 202 0 ABS 0 udata_bank36 -
+__Ludata_bank37 202 0 ABS 0 udata_bank37 -
+__Ludata_bank38 202 0 ABS 0 udata_bank38 -
+__Ludata_bank39 202 0 ABS 0 udata_bank39 -
+__Ludata_bank40 202 0 ABS 0 udata_bank40 -
+__Ludata_bank41 202 0 ABS 0 udata_bank41 -
+__Ludata_bank42 202 0 ABS 0 udata_bank42 -
+__Ludata_bank43 202 0 ABS 0 udata_bank43 -
+__Ludata_bank44 202 0 ABS 0 udata_bank44 -
+__Ludata_bank45 202 0 ABS 0 udata_bank45 -
+__Ludata_bank46 202 0 ABS 0 udata_bank46 -
+__Ludata_bank47 202 0 ABS 0 udata_bank47 -
+__Ludata_bank48 202 0 ABS 0 udata_bank48 -
+__Ludata_bank49 202 0 ABS 0 udata_bank49 -
+__Ludata_bank50 202 0 ABS 0 udata_bank50 -
+__Ludata_bank51 202 0 ABS 0 udata_bank51 -
+__Ludata_bank52 202 0 ABS 0 udata_bank52 -
+__Ludata_bank53 202 0 ABS 0 udata_bank53 -
+__Ludata_bank54 202 0 ABS 0 udata_bank54 -
+__Lconfig 0 0 CONFIG 4 config -
+isa$std 1 0 ABS 0 - build/default/production/PRACTICA_1.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HresetVect 0 0 ABS 0 resetVect -
+__Ludata_bank5 202 0 ABS 0 udata_bank5 -
+__Ludata_bank6 202 0 ABS 0 udata_bank6 -
+__Ludata_bank7 202 0 ABS 0 udata_bank7 -
+__Ludata_bank8 202 0 ABS 0 udata_bank8 -
+__Ludata_bank9 202 0 ABS 0 udata_bank9 -
+__LresetVect 0 0 ABS 0 resetVect -
+__Hudata_acs 202 0 ABS 0 udata_acs -
+__Ludata_acs 202 0 ABS 0 udata_acs -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+resetVect 0 1FFFC 1FFFC 4 1
+udata_acs 1 500 500 5 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
