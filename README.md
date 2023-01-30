@@ -17,19 +17,11 @@
 
 
 *Listado de practicas:*
+
+
 	*1.* Retardos:
-	
-	
 	*2.* P1-Corrimiento de leds
-	
-	
 	*3.* P2-Display_7_SEG
-	
-	
 	*6.* Parcial2:
-	
-	
 		-Divisor_de _Frecuencia
-		
-		
 		-Interrupciones
