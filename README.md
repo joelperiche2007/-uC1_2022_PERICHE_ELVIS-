@@ -1,19 +1,25 @@
-CURSO: Microcontroladores I
+*CURSO: Microcontroladores I
 
 
-AUTOR: Periche Ruiz Elvis Joel
+*AUTOR: Periche Ruiz Elvis Joel
 
 
-TARJETA: Curiosity Nano PIC18F57Q84
+*TARJETA: Curiosity Nano PIC18F57Q84
 
 
-ENTORNO: Mplab X IDE
+*ENTORNO: Mplab X IDE
 
 
-LENGUAJE: AMS-C
+*LENGUAJE: AMS-C
 
 
-UNIVERSIDAD NACIONAL DE PIURA, PERU.
+*UNIVERSIDAD NACIONAL DE PIURA, PERU.
 
 
-LISTADO DE PRACTICAS: LIBRERIA DE RETARDOS, P1-Corrimiento_Leds, P2-Display_7SEG.
+*Listado de practicas:*
+	*1.* Retardos:
+	*2.* P1-Corrimiento de leds
+	*3.* P2-Display_7_SEG
+	*6.* Parcial2:
+		-Divisor_de _Frecuencia
+		-Interrupciones
